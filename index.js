@@ -110,6 +110,11 @@ async function run() {
                 });
             }
         })
+
+        // random parameter test
+        app.get('/hero', async (req, res) => {
+            res.send('Hero going to meet Heroku');
+        })
     } finally {
         // await client.close();
     }
